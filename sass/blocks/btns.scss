@@ -1,0 +1,48 @@
+.btn {
+  background-color : transparent;
+  border           : none;
+  color            : #fff;
+  cursor           : pointer;
+  padding          : 0;
+  text-decoration  : none;
+
+  &:focus {
+    outline : none;
+  }
+}
+
+.main-btn {
+  @include transition;
+  background-color : $bg-color;
+  display          : block;
+  font             : $font-size-interest $font-bold;
+  margin           : 0 auto;
+  padding          : 15px 45px;
+  text-transform   : uppercase;
+  text-align       : center;
+  width            : 280px;
+
+  &:hover {
+    background-color : $bg-color-hvr;
+  }
+
+  &:active {
+    background-color : $bg-color-down;
+  }
+
+  @media #{$media-tablet} {
+    width : 455px;
+  }
+
+  &--testimonial {
+    @media #{$media-tablet} {
+      float : left;
+      width : 324px;
+    }
+
+    @media #{$media-desktop} {
+      width : 480px;
+    }
+  }
+}
+

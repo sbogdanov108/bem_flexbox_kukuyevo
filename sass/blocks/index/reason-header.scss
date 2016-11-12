@@ -1,0 +1,94 @@
+.reason-header {
+  background-color : $bg-color;
+  color            : #fff;
+  text-align       : center;
+  padding          : 0 0 42px;
+  position         : relative;
+
+  &:before {
+    width        : 0;
+    height       : 0;
+    border-style : solid;
+    border-width : 16px 160px 0 160px;
+    border-color : #fff transparent transparent transparent;
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    content      : '';
+  }
+
+  &--height {
+    height : 171px;
+  }
+
+  &--no-triangle {
+    &:before {
+      border : none;
+    }
+  }
+
+  @media #{$media-tablet} {
+    flex-basis : 256px;
+    padding    : 46px 0;
+
+    &:before {
+      border  : none;
+      content : '';
+    }
+
+    &--order-0 {
+      order : 0;
+    }
+
+    &--order-1 {
+      order : 1;
+    }
+  }
+
+  @media #{$media-desktop} {
+    padding    : 45px 0 60px;
+    flex-basis : 400px;
+  }
+}
+
+.reason-header__first-sign {
+  font-size   : $font-size-bold;
+  font-family : $font-bold;
+  padding     : 56px 40px 10px;
+
+  &--padding {
+    padding : 38px 40px 10px;
+  }
+
+  @media #{$media-tablet} {
+    font-size : $font-size-bold-tablet;
+    padding   : 0 40px 1px;
+  }
+
+  @media #{$media-desktop} {
+    padding : 5px 95px 3px;
+  }
+}
+
+.reason-header__second-sign {
+  font-size   : $font-size-regular;
+  font-family : $font-regular;
+  padding     : $padding-mobile;
+
+  span {
+    display        : block;
+    padding-bottom : 17px;
+  }
+
+  @media #{$media-tablet} {
+    padding : 0 45px;
+
+    span {
+      padding-bottom : 23px;
+    }
+  }
+
+  @media #{$media-desktop} {
+    padding : 0 55px;
+  }
+}

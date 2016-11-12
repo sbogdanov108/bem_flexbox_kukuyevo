@@ -1,0 +1,134 @@
+.photos {
+  padding        : $padding-mobile;
+  margin         : 24px 0 0;
+  display        : flex;
+  flex-direction : column;
+
+  @media #{$media-tablet} {
+    padding        : 0 $padding-tablet-lr;
+    margin         : 53px 0 0;
+    flex-direction : row;
+    flex-wrap      : wrap;
+  }
+
+  @media #{$media-desktop} {
+    padding : 0;
+    margin  : 56px 0 0;
+  }
+}
+
+.photos__item {
+  border-top : 1px solid $border-color;
+  padding    : 22px 0 11px;
+  overflow   : hidden;
+
+  &:first-child {
+    @media #{$media-tablet} {
+      flex-basis : 100%;
+      padding    : 14px 0 0;
+    }
+
+    img {
+      @media #{$media-tablet} {
+        height : 400px;
+      }
+    }
+  }
+
+  @media #{$media-tablet} {
+    border     : none;
+    flex-basis : 50%;
+    padding    : 0;
+  }
+
+  @media #{$media-desktop} {
+    flex-basis : 33.33333%;
+    position   : relative;
+  }
+}
+
+.photos__title {
+  font    : 14px $font-bold;
+  padding : 19px 0 5px;
+
+  @media #{$media-tablet} {
+    padding : 1px 0 5px;
+  }
+
+  @media #{$media-desktop} {
+    color : #fff;
+  }
+}
+
+.photos__info-wr {
+  display        : flex;
+  flex-direction : column;
+
+  @media #{$media-tablet} {
+    background     : #f2f2f2;
+    flex-direction : row;
+    padding        : 19px 20px;
+  }
+
+  @media #{$media-desktop} {
+    background : rgba(0, 0, 0, 0.3);
+    position   : absolute;
+    bottom     : 0;
+    width      : 100%;
+  }
+}
+
+.photos__info {
+  @media #{$media-tablet} {
+    flex-grow : 1;
+  }
+}
+
+.photos__author {
+  color          : $font-color-regular;
+  font           : 14px $font-regular;
+  text-transform : none;
+
+  @media #{$media-desktop} {
+    color : #fff;
+  }
+}
+
+.photos__likes-wr {
+  padding : 10px 0 5px;
+
+  @media #{$media-tablet} {
+    padding : 9px 8px 0;
+  }
+}
+
+.photos__likes-ico {
+  padding-right   : 10px;
+  text-decoration : none;
+
+  @media #{$media-tablet} {
+    padding-right : 5px;
+  }
+
+  svg {
+    @include transition(fill);
+    fill : #b2b2b2;
+
+    @media #{$media-desktop} {
+      fill : #fff;
+    }
+
+    &:hover {
+      fill : #766357;
+    }
+  }
+}
+
+.photos__likes-count {
+  font           : 14px $font-bold;
+  vertical-align : text-bottom;
+
+  @media #{$media-desktop} {
+    color : #fff;
+  }
+}

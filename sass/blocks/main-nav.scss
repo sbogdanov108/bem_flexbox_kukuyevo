@@ -1,0 +1,124 @@
+.main-nav {
+  @include transition(margin-top);
+
+  @media #{$media-only-mobile} {
+    &--open {
+      margin-top : 0;
+    }
+
+    &--closed {
+      margin-top : -222px;
+    }
+  }
+}
+
+.main-nav__links {
+  background-color : $bg-color;
+  list-style       : none;
+  display          : flex;
+  flex-direction   : column;
+
+  @media #{$media-tablet} {
+    background-color : #fff;
+    flex-direction   : row;
+    width            : 100%;
+  }
+}
+
+.main-nav__link {
+  border-top    : 1px solid $mob-menu-color-border-top;
+  border-bottom : 1px solid $mob-menu-color-border-bottom;
+  cursor        : pointer;
+  text-align    : center;
+
+  &--hide-mobile {
+    @media #{$media-only-mobile} {
+      display : none;
+    }
+
+    @media #{$media-tablet} {
+      display : block;
+    }
+  }
+
+  &:first-child {
+    border-top : 0;
+    position   : relative;
+  }
+
+  &:last-child {
+    border-bottom : 0;
+    box-shadow    : inset 0px -4px 6px -2px rgba(0, 0, 0, 0.2);
+  }
+
+  a {
+    @include transition(background);
+    color           : #fff;
+    display         : block;
+    font-size       : $font-size-bold;
+    font-family     : $font-bold;
+    padding         : 15px 0 14px;
+    text-decoration : none;
+
+    &:hover {
+      background-color : $bg-color-hvr;
+    }
+
+    @media #{$media-only-mobile} {
+      max-height : 54px;
+    }
+  }
+
+  @media #{$media-tablet} {
+    border : none;
+    flex   : 1 1 100%;
+
+    &:last-child {
+      box-shadow : none;
+    }
+
+    a {
+      color     : $font-color-bold;
+      font-size : 14px;
+      padding   : 18px 0;
+    }
+  }
+
+  @media #{$media-desktop} {
+    a {
+      padding : 18px 0;
+    }
+  }
+}
+
+a.main-nav__logo {
+  @include transition(opacity);
+  position : relative;
+  z-index  : 10;
+  padding  : 0;
+
+  &:hover {
+    opacity          : .5;
+    background-color : transparent;
+  }
+
+  img {
+    margin : 0 auto;
+  }
+}
+
+.main-nav__close {
+  @include transition(fill);
+  fill     : #fff;
+  position : absolute;
+  right    : 21px;
+  top      : 17px;
+
+  &:hover {
+    fill : $color-danger;
+  }
+
+  @media #{$media-tablet} {
+    display : none;
+  }
+}

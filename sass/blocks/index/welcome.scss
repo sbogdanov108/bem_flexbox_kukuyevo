@@ -1,0 +1,149 @@
+.welcome {
+  margin-top    : -33px;
+  margin-bottom : 27px;
+
+  @media #{$media-tablet} {
+    margin-top    : -27px;
+    margin-bottom : 50px;
+  }
+
+  @media #{$media-desktop} {
+    margin-top : -40px;
+  }
+}
+
+.welcome__main {
+  background : url(../img/bg-back-mobile@1x.jpg) no-repeat top center;
+  height     : 390px;
+  position   : relative;
+  text-align : center;
+
+  &:after {
+    width        : 0;
+    height       : 0;
+    border-style : solid;
+    border-width : 27px 160px 1px 160px;
+    border-color : transparent #fff #fff #fff;
+    position     : absolute;
+    bottom       : 0;
+    left         : 0;
+    content      : '';
+  }
+
+  @media #{$media-tablet} {
+    background-size : cover;
+    height          : 520px;
+
+    &:after {
+      border-width : 59px 350px 1px 350px;
+      left         : 33px;
+    }
+  }
+
+  @media #{$media-desktop} {
+    background : url(../img/welcome-bg-desktop.jpg) no-repeat top center;
+
+    &:after {
+      left : 250px;
+    }
+  }
+}
+
+.welcome__first-sign {
+  margin  : 0 auto;
+  padding : 90px 0 8px;
+  width   : 158px;
+
+  @media #{$media-tablet} {
+    padding : 77px 0 12px;
+    width   : auto;
+  }
+}
+
+.welcome__second-sign {
+  color          : #fff;
+  font-family    : $font-bold;
+  font-size      : 60px;
+  padding-bottom : 17px;
+
+  @media #{$media-tablet} {
+    font-size      : 107px;
+    padding-bottom : 19px;
+  }
+}
+
+.welcome__third-sign {
+  color          : #fff;
+  font-family    : 'Marck Script', cursive;
+  font-size      : 25px;
+  word-spacing   : -0.2em;
+  letter-spacing : -0.01em;
+  line-height    : 1;
+  text-transform : none;
+
+  @media #{$media-tablet} {
+    font-size      : 45px;
+    padding        : 0 135px;
+    line-height    : 0.8;
+    letter-spacing : -0.06em;
+  }
+
+  @media #{$media-desktop} {
+    padding : 5px 345px;
+  }
+}
+
+.welcome__desc-first {
+  color       : $font-color-bold;
+  font-family : $font-bold;
+  font-size   : $font-size-bold;
+  margin      : 38px 0 31px;
+  padding     : $padding-mobile;
+
+  @media #{$media-tablet} {
+    font-size   : $font-size-bold-tablet;
+    line-height : 1.3;
+    padding     : 0 70px;
+    margin      : 46px 0 29px;
+  }
+
+  @media #{$media-desktop} {
+    padding : 0 300px;
+  }
+}
+
+.welcome__5-reasons {
+  text-align : center;
+
+  @media #{$media-tablet} {
+    position : relative;
+
+    &:before {
+      border-width : 40px 384px 17px 384px;
+      width        : 0;
+      height       : 0;
+      border-style : solid;
+      border-color : transparent #fff #fff #fff;
+      position     : absolute;
+      top          : -84px;
+      left         : 0;
+      content      : '';
+    }
+  }
+
+  @media #{$media-desktop} {
+    &:before {
+      border-width : 55px 600px 37px 600px;
+      content      : '';
+      top          : -104px;
+    }
+  }
+}
+
+.welcome__desc-second {
+  color       : $font-color-regular;
+  font-family : $font-regular;
+  font-size   : $font-size-regular;
+  line-height : 1.8;
+  padding     : $padding-mobile;
+}

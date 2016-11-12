@@ -1,0 +1,35 @@
+.page-header {
+  overflow : hidden;
+}
+
+.page-header__logo {
+  position   : relative;
+  text-align : center;
+  z-index    : 1;
+
+  &--hide-big {
+    @media #{$media-tablet} {
+      display : none;
+    }
+  }
+
+  a {
+    display : inline-block;
+  }
+}
+
+.page-header__toggle {
+  @include transition;
+  fill     : $bg-color;
+  position : absolute;
+  right    : 20px;
+  top      : 17px;
+
+  &:hover {
+    fill : $bg-color-hvr;
+  }
+
+  &:active {
+    fill : $bg-color-down;
+  }
+}

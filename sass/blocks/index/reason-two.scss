@@ -1,0 +1,82 @@
+.reason-two__wrapper {
+  display        : flex;
+  flex-direction : column;
+
+  @media #{$media-tablet} {
+    flex-direction : row;
+  }
+}
+
+.reason-two {
+  overflow : hidden;
+}
+
+.reason-two__items {
+  background-color : #eee;
+  display          : flex;
+  flex-direction   : column;
+
+  @media #{$media-tablet} {
+    flex-direction : row;
+  }
+
+  @media #{$media-desktop} {
+    height : 256px;
+  }
+}
+
+.reason-two__item {
+  border-bottom : 1px solid #d6d6d6;
+  padding       : 29px 0;
+  text-align    : center;
+
+  &:last-child {
+    border-bottom : none;
+  }
+
+  @media #{$media-tablet} {
+    border     : none;
+    padding    : 45px 0;
+    flex-basis : 33.33333%;
+  }
+}
+
+.reason-two__title {
+  color : $font-color-bold;
+  font  : $font-size-bold $font-bold;
+
+  @media #{$media-tablet} {
+    font-size : $font-size-bold-tablet;
+    padding   : 0 50px;
+  }
+
+  @media #{$media-desktop} {
+    padding : 0 120px;
+  }
+}
+
+.reason-two__number {
+  @include reason-txt-regular;
+  margin : 11px 0 16px;
+
+  @media #{$media-tablet} {
+    margin : 9px 0 23px;
+  }
+}
+
+.reason-two__desk {
+  @include reason-txt-regular;
+  padding : 0 30px;
+
+  @media #{$media-tablet} {
+    padding : 0 50px;
+
+    span {
+      display : block;
+
+      &:after {
+        content : '-';
+      }
+    }
+  }
+}

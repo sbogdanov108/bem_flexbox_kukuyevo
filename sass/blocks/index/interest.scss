@@ -1,0 +1,53 @@
+.interest__header {
+  text-align    : center;
+  padding       : 0 30px;
+  margin-bottom : 35px;
+  overflow      : hidden;
+
+  @media #{$media-tablet} {
+    margin-bottom : 44px;
+  }
+
+  @media #{$media-desktop} {
+    margin-bottom : 49px;
+  }
+}
+
+.interest__map {
+  background : url(../img/bg-map-mobile@1x.jpg) no-repeat;
+  height     : 350px;
+  margin     : 50px 0 0;
+
+  @media #{$media-tablet} {
+    background : url(../img/map.jpg) no-repeat;
+    margin     : 57px 0 0;
+  }
+
+  @media #{$media-desktop} {
+    background-size : cover;
+    margin          : 65px 0 0;
+  }
+}
+
+.interest__first-sign {
+  color   : $font-color-bold;
+  font    : $font-size-interest $font-bold;
+  padding : 26px 0 20px;
+
+  @media #{$media-tablet} {
+    font-size : 30px;
+    padding   : 49px 0 25px;
+  }
+}
+
+.interest__second-sign {
+  color       : $font-color-regular;
+  font        : $font-size-regular $font-regular;
+  line-height : 1.7;
+
+  @media #{$media-tablet} {
+    span {
+      display : block;
+    }
+  }
+}

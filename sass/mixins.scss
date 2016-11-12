@@ -1,0 +1,100 @@
+@mixin transition( $css: all, $time: .5s, $animation: linear ) {
+  transition : $css $time $animation;
+}
+
+@mixin container {
+  background-color : #fff;
+  margin           : 0 auto;
+  width            : $width-mobile;
+
+  @media #{$media-tablet} {
+    width : $width-tablet;
+  }
+
+  @media #{$media-desktop} {
+    width : $width-desktop;
+  }
+}
+
+@mixin reason-txt-regular {
+  color       : $font-color-regular;
+  font        : $font-size-regular $font-regular;
+  line-height : $font-line-height;
+}
+
+@mixin reason-img {
+  @media #{$media-tablet} {
+    flex-basis : 513px;
+  }
+
+  @media #{$media-desktop} {
+    flex-basis : 800px;
+  }
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content : " ";
+    display : table;
+  }
+
+  &:after {
+    clear : both;
+  }
+}
+
+@mixin form-title {
+  color       : $font-color-bold;
+  font-family : $font-bold;
+  font-size   : $font-size-bold;
+  text-align  : center;
+
+  @media #{$media-tablet} {
+    font-size : $font-size-bold-tablet;
+  }
+}
+
+@mixin form-label {
+  color   : $font-color-regular;
+  font    : $font-size-regular $font-regular;
+  display : inline-block;
+}
+
+@mixin placeholder {
+  &::placeholder {
+    @content
+  }
+}
+
+@mixin form-placeholder-content {
+  color       : $font-color-bold;
+  font-family : $font-bold;
+  font-size   : $font-size-bold;
+}
+
+@mixin form-item {
+  border-top : 1px solid $border-color;
+}
+
+@mixin form-input-text {
+  @include transition;
+  @include placeholder {
+    @include form-placeholder-content;
+  }
+
+  background-color : $input-bg;
+  border           : 2px solid $input-bg;
+  padding          : 16px 22px;
+
+  &:hover {
+    background-color : $input-bg-hvr;
+    border           : 2px solid $input-bg-hvr;
+  }
+
+  &:focus {
+    outline          : none;
+    border           : 2px solid $input-color-active-border;
+    background-color : $input-bg-active;
+  }
+}

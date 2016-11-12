@@ -1,0 +1,102 @@
+.page-footer {
+  margin         : 35px 0 0;
+  padding        : 0 $padding-mobile-lr 30px;
+  display        : flex;
+  flex-direction : column;
+
+  @media #{$media-tablet} {
+    flex-direction  : row;
+    justify-content : space-between;
+    padding         : 0 $padding-tablet-lr 30px;
+    align-items     : center;
+  }
+
+  @media #{$media-desktop} {
+    padding : 0 130px 30px;
+  }
+}
+
+.page-footer__visit-hash {
+  color         : $font-color-bold;
+  font          : $font-size-interest $font-bold;
+  margin-bottom : 36px;
+  text-align    : center;
+
+  @media #{$media-tablet} {
+    margin : 0;
+  }
+}
+
+.page-footer__social {
+  margin-bottom : 34px;
+  text-align    : center;
+
+  @media #{$media-tablet} {
+    margin        : 0;
+    padding-right : 15px;
+  }
+
+  a {
+    @include transition;
+    background-color : $bg-color;
+    padding          : 14px 0;
+    width            : 46px;
+    height           : 47px;
+    margin-right     : 3px;
+    display          : inline-block;
+    vertical-align   : bottom;
+
+    &:hover {
+      background-color : $bg-color-hvr;
+    }
+
+    &:active {
+      background-color : $bg-color-down;
+    }
+
+    &:last-child {
+      margin-right : 0;
+    }
+  }
+
+  span {
+    display : none;
+  }
+
+  svg {
+    fill : #fff;
+  }
+}
+
+.page-footer__developed {
+  @include reason-txt-regular;
+  text-align : center;
+}
+
+.page-footer__developed-sign {
+  margin         : 0 12px 0 0;
+  vertical-align : middle;
+
+  @media #{$media-tablet} {
+    margin-right : 10px;
+  }
+}
+
+.page-footer__developed-lnk {
+  &:hover {
+    & img {
+      opacity : .5;
+    }
+  }
+
+  img {
+    @include transition;
+    display        : inline;
+    vertical-align : middle;
+    width          : 24px;
+
+    @media #{$media-tablet} {
+      width : 27px;
+    }
+  }
+}

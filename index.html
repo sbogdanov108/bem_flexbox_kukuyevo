@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kukuyevo</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic" rel="stylesheet">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+<div class="container">
+  <header class="page-header">
+    <nav class="main-nav  main-nav--closed">
+      <ul class="main-nav__links">
+        <li class="main-nav__link  main-nav__link--active">
+          <a href="/">Главная</a>
+          <svg class="btn main-nav__close" id="main-nav__close-js" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+          </svg>
+        </li>
+        <li class="main-nav__link"><a href="photos.html">Фото и видео</a></li>
+        <li class="main-nav__link main-nav__link--hide-mobile">
+          <a class="main-nav__logo" href="/">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/logo-d.png 1x">
+              <source media="(min-width:768px)" srcset="img/logo-t.png 1x">
+              <img srcset="img/logo-d.png" alt="Kukuyevo">
+            </picture>
+          </a>
+        </li>
+        <li class="main-nav__link"><a href="testimonial.html">Форма отзыва</a></li>
+        <li class="main-nav__link"><a href="http://bogdanov-blog.ru" target="_blank">Блог</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-header__logo page-header__logo--hide-big">
+      <a href="/"><img src="img/logo-m.svg" alt="Kukuyevo"></a>
+
+      <svg class="btn page-header__toggle" id="page-header__toggle-js" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+        <g>
+          <rect width="22.928" height="3.964"/>
+          <rect y="9.009" width="22.928" height="3.964"/>
+          <rect y="18.018" width="22.928" height="3.964"/>
+        </g>
+      </svg>
+
+    </div>
+  </header>
+
+  <section class="welcome">
+    <div class="welcome__main">
+      <img class="welcome__first-sign" src="img/welcome.png" alt="Welcome">
+      <p class="welcome__second-sign">Kukuyevo</p>
+      <p class="welcome__third-sign">&ldquo;Это вам не Гранд Канаваньён!&bdquo;</p>
+    </div>
+
+    <div class="welcome__5-reasons">
+      <p class="welcome__desc-first">Кукуево — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
+      <p class="welcome__desc-second">Рассмотрим 5 причин, по которым Кукуево круче чем Гранд Канаваньён!</p>
+    </div>
+  </section>
+
+  <section class="reason-one">
+    <div class="reason-one__wrapper">
+      <header class="reason-header">
+          <p class="reason-header__first-sign">Настоящий городок</p>
+          <p class="reason-header__second-sign"><span>— №1 —</span> Кукуево не атракцион для туристов, там течет
+            своя жизнь</p>
+      </header>
+
+      <div class="reason-one__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/true-city-d.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/true-city-t.jpg 1x">
+          <source media="(min-width:320px)" srcset="img/true-city-m.jpg 1x">
+          <img srcset="img/true-city-d.jpg" alt="Настоящий городок">
+        </picture>
+      </div>
+    </div>
+
+    <div class="reason-one__items">
+      <div class="reason-one__item">
+        <img src="img/icon-house.svg" alt="Жилье">
+
+        <div class="reason-one__item-inner">
+          <h3 class="reason-one__title">Жилье</h3>
+          <p class="reason-one__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+      </div>
+
+      <div class="reason-one__item">
+        <img src="img/icon-gift.svg" alt="Сувениры">
+
+        <div class="reason-one__item-inner">
+          <h3 class="reason-one__title">Сувениры</h3>
+          <p class="reason-one__desc">Не только китайского, но и местного производства!</p>
+        </div>
+      </div>
+
+      <div class="reason-one__item">
+        <img src="img/icon-burger.svg" alt="Еда">
+
+        <div class="reason-one__item-inner">
+          <h3 class="reason-one__title">Еда</h3>
+          <p class="reason-one__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reason-two">
+    <div class="reason-two__wrapper">
+      <header class="reason-header  reason-header--no-triangle  reason-header--order-1">
+        <p class="reason-header__first-sign  reason-header__first-sign--padding">Там есть Мост дьявола</p>
+        <p class="reason-header__second-sign"><span>— №2 —</span> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </header>
+
+      <div class="reason-two__img  reason-header--order-0">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/bridge-d.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/bridge-t.jpg 1x">
+          <source media="(min-width:320px)" srcset="img/bridge-m.jpg 1x">
+          <img srcset="img/bridge-d.jpg" alt="Мост">
+        </picture>
+      </div>
+    </div>
+
+    <div class="reason-two__items">
+      <div class="reason-two__item">
+        <h3 class="reason-two__title">Небольшая площадь</h3>
+
+        <p class="reason-two__number">— №3 —</p>
+        <p class="reason-two__desk"><span>Все достопримеча</span>тельности находятся очень близко</p>
+      </div>
+
+      <div class="reason-two__item">
+        <h3 class="reason-two__title">Красивая дорога</h3>
+
+        <p class="reason-two__number">— №4 —</p>
+        <p class="reason-two__desk">Ехать в Кукуево из лас-вегаса совсем не скучно!</p>
+      </div>
+
+      <div class="reason-two__item">
+        <h3 class="reason-two__title">Мало туристов</h3>
+
+        <p class="reason-two__number">— №5 —</p>
+        <p class="reason-two__desk">Большинство едет в Гранд Канаваньён и толпится там</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="interest">
+    <header class="interest__header">
+      <p class="interest__first-sign">Заинтересовались?</p>
+      <p class="interest__second-sign"><span>Укажите предполагаемые даты поездки</span> и мы покажем вам лучшие предложения гостиниц в Кукуево</p>
+    </header>
+
+    <a href="#" class="btn main-btn">Найти гостиницу</a>
+
+    <div class="interest__map"></div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="page-footer__item">
+      <div class="page-footer__visit-hash">
+        #visitkukuyevo
+      </div>
+    </div>
+
+    <div class="page-footer__item">
+      <div class="page-footer__social">
+        <a href="#" class="btn page-footer__twitter">
+          <span>Twitter</span>
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+            </g>
+          </svg>
+        </a>
+
+        <a href="#" class="btn page-footer__facebook">
+          <span>Facebook</span>
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+            <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="btn page-footer__youtube">
+          <span>Youtube</span>
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+            <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="page-footer__item">
+      <div class="page-footer__developed">
+        <span class="page-footer__developed-sign">Разработано</span>
+
+        <a class="page-footer__developed-lnk" href="http://bogdanov-blog.ru" target="_blank" title="bogdanov-blog.ru">
+          <img src="img/some_logo-tr.png" alt="bogdanov-blog.ru">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</div>
+</body>
+</html>
