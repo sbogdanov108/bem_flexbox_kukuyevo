@@ -63,10 +63,6 @@
     &:hover {
       background-color : $bg-color-hvr;
     }
-
-    @media #{$media-only-mobile} {
-      max-height : 54px;
-    }
   }
 
   @media #{$media-tablet} {
